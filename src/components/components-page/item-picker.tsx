@@ -4,6 +4,7 @@ import * as React from "react";
 import { SearchIcon } from "lucide-react";
 import { getAllComponents, type ComponentItem } from "@/lib/component-data";
 import { groupComponentsByType } from "@/lib/utils";
+import { isNewComponent } from "@/lib/component-new";
 import { Button } from "@/components/ui/button";
 import {
   CommandDialog,
@@ -88,6 +89,11 @@ export function ItemPicker({
                   className="cursor-pointer"
                 >
                   <span>{item.title}</span>
+                  {isNewComponent(item.id) && (
+                    <span className="shrink-0 rounded border border-primary/40 bg-primary/10 px-1 py-px font-mono text-[8px] uppercase tracking-wider text-primary">
+                      new
+                    </span>
+                  )}
                   <span className="text-foreground/80 ml-auto text-xs opacity-0 group-data-[selected=true]:opacity-100">
                     {group.title}
                   </span>

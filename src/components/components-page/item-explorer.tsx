@@ -8,6 +8,7 @@ import {
   standardComponents,
   type ComponentItem,
 } from "@/lib/component-data";
+import { isNewComponent } from "@/lib/component-new";
 import {
   Collapsible,
   CollapsibleContent,
@@ -49,19 +50,26 @@ const ItemButton = React.memo(function ItemButton({
     }
   }
 
+  const isNew = isNewComponent(item.id);
+
   return (
     <button
       type="button"
       onClick={onSelect}
       className={cn(
-        "block w-full text-left rounded px-2 py-1.5 text-xs transition-all",
+        "flex w-full items-center gap-1.5 text-left rounded px-2 py-1.5 text-xs transition-all",
         "hover:bg-primary/10 hover:text-primary",
         isActive
           ? "bg-primary/20 text-primary border-l-2 border-primary"
           : "text-foreground"
       )}
     >
-      {content}
+      <span className="truncate">{content}</span>
+      {isNew && (
+        <span className="shrink-0 rounded border border-primary/40 bg-primary/10 px-1 py-px font-mono text-[8px] uppercase tracking-wider text-primary">
+          new
+        </span>
+      )}
     </button>
   );
 });

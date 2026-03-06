@@ -46,3 +46,5 @@ next-env.d.ts
 references
 
 public/r
+# Auto-generated component dates
+src/lib/component-dates.generated.ts

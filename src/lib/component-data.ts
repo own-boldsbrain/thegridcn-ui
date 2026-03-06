@@ -1054,6 +1054,15 @@ export const standardComponents: ComponentItem[] = [
   },
 ];
 
+// Sort all items alphabetically by title
+const sortByTitle = (a: ComponentItem, b: ComponentItem) =>
+  a.title.localeCompare(b.title);
+
+for (const section of Object.values(componentSections)) {
+  section.items.sort(sortByTitle);
+}
+standardComponents.sort(sortByTitle);
+
 // Add a "Components" section that groups all standard components
 export const componentsSection = {
   title: "Components",
