@@ -112,3 +112,35 @@ export { LightCycleGame } from "./light-cycle-game"
 export { Leaderboard } from "./leaderboard"
 export { AliasInput } from "./alias-input"
 
+// Code
+export { CopyButton } from "./copy-button"
+export { TronCodeBlock } from "./code-block"
+
+// Status & Indicators
+export { StatusDot } from "./status-dot"
+
+// Layout & Page Sections
+export { HeroSection } from "./hero-section"
+export { Footer } from "./footer"
+export { SidebarNav } from "./sidebar-nav"
+
+// Wrappers (Tron-styled shadcn/ui)
+export { TronAccordion } from "./accordion"
+export { TronCarousel } from "./carousel"
+export { TronDrawer, TronDrawerTrigger, TronDrawerContent, TronDrawerHeader, TronDrawerFooter, TronDrawerTitle, TronDrawerDescription } from "./drawer"
+export { TronCard, TronCardHeader, TronCardTitle, TronCardDescription, TronCardContent, TronCardFooter } from "./card"
+export { TronPopover, TronPopoverTrigger, TronPopoverContent } from "./popover"
+
+// Data Display
+export { ActivityFeed } from "./activity-feed"
+export { MetricRow } from "./metric-row"
+
+// Form & Input (Extended)
+export { SearchInput } from "./search-input"
+export { TagInput } from "./tag-input"
+export { NewsletterForm } from "./newsletter-form"
+export { DatePicker } from "./date-picker"
+
+// Utilities
+export { InstallCommand } from "./install-command"
+

@@ -84,6 +84,36 @@ import {
   TextInput,
   NumberInput,
   Chip,
+  CopyButton,
+  TronCodeBlock,
+  StatusDot,
+  HeroSection,
+  Footer,
+  InstallCommand,
+  SidebarNav,
+  TronAccordion,
+  TronCarousel,
+  TronDrawer,
+  TronDrawerTrigger,
+  TronDrawerContent,
+  TronDrawerHeader,
+  TronDrawerTitle,
+  TronDrawerDescription,
+  TronCard,
+  TronCardHeader,
+  TronCardTitle,
+  TronCardDescription,
+  TronCardContent,
+  TronCardFooter,
+  TronPopover,
+  TronPopoverTrigger,
+  TronPopoverContent,
+  ActivityFeed,
+  MetricRow,
+  SearchInput,
+  TagInput,
+  NewsletterForm,
+  DatePicker,
 } from "@/components/thegridcn";
 
 // Dynamic 3D components
@@ -1750,6 +1780,500 @@ export const AgentAvatarPreview = React.memo(function AgentAvatarPreview() {
   );
 });
 
+// ---------------------------------------------------------------------------
+// New Component Previews
+// ---------------------------------------------------------------------------
+
+export const CopyButtonPreview = React.memo(function CopyButtonPreview() {
+  return (
+    <div className="space-y-4">
+      <div className="flex flex-wrap items-center gap-3">
+        <CopyButton value="npm install @thegridcn/ui" variant="default" size="md">
+          COPY
+        </CopyButton>
+        <CopyButton value="pnpm add @thegridcn/ui" variant="ghost" size="md">
+          GHOST
+        </CopyButton>
+        <CopyButton value="yarn add @thegridcn/ui" variant="outline" size="md">
+          OUTLINE
+        </CopyButton>
+      </div>
+      <div className="flex flex-wrap items-center gap-3">
+        <CopyButton value="npx thegridcn init" variant="default" size="sm">
+          SM DEFAULT
+        </CopyButton>
+        <CopyButton value="disabled" variant="default" size="sm" disabled>
+          DISABLED
+        </CopyButton>
+      </div>
+    </div>
+  );
+});
+
+export const TronCodeBlockPreview = React.memo(function TronCodeBlockPreview() {
+  const code = `import { DataCard, HUDFrame } from "@thegridcn/ui"
+
+export function Dashboard() {
+  return (
+    <HUDFrame title="GRID STATUS">
+      <DataCard
+        title="Active Programs"
+        value={2048}
+        trend="up"
+      />
+    </HUDFrame>
+  )
+}`;
+
+  return (
+    <div className="space-y-4">
+      <TronCodeBlock code={code} language="tsx" filename="dashboard.tsx" />
+    </div>
+  );
+});
+
+export const StatusDotPreview = React.memo(function StatusDotPreview() {
+  return (
+    <div className="space-y-4">
+      <div className="flex flex-wrap items-center gap-6">
+        <StatusDot status="online" pulse label="Online" size="md" />
+        <StatusDot status="offline" label="Offline" size="md" />
+        <StatusDot status="busy" pulse label="Busy" size="md" />
+        <StatusDot status="away" pulse label="Away" size="md" />
+        <StatusDot status="error" pulse label="Error" size="md" />
+      </div>
+      <div className="flex flex-wrap items-center gap-6">
+        <StatusDot status="online" pulse size="sm" label="Small" />
+        <StatusDot status="online" pulse size="md" label="Medium" />
+        <StatusDot status="online" pulse size="lg" label="Large" />
+      </div>
+    </div>
+  );
+});
+
+export const HeroSectionPreview = React.memo(function HeroSectionPreview() {
+  return (
+    <HeroSection
+      badge="Now Available"
+      subtitle="The Grid Component Network"
+      title="Build the Future"
+      description="A Tron-inspired component library for building cinematic user interfaces with React and Tailwind CSS."
+    >
+      <button className="rounded border border-primary bg-primary/20 px-6 py-2.5 font-mono text-xs uppercase tracking-widest text-primary shadow-[0_0_12px_rgba(var(--primary-rgb,0,180,255),0.2)] transition-all hover:bg-primary/30">
+        Enter the Grid
+      </button>
+      <button className="rounded border border-primary/30 px-6 py-2.5 font-mono text-xs uppercase tracking-widest text-foreground/60 transition-all hover:border-primary/50 hover:text-primary">
+        Documentation
+      </button>
+    </HeroSection>
+  );
+});
+
+export const FooterPreview = React.memo(function FooterPreview() {
+  return (
+    <Footer
+      logo={
+        <span className="font-display text-lg font-bold uppercase tracking-wider text-primary">
+          TheGridCN
+        </span>
+      }
+      columns={[
+        {
+          title: "Product",
+          links: [
+            { label: "Components", href: "#" },
+            { label: "Templates", href: "#" },
+            { label: "Pricing", href: "#" },
+          ],
+        },
+        {
+          title: "Resources",
+          links: [
+            { label: "Documentation", href: "#" },
+            { label: "Changelog", href: "#" },
+            { label: "Blog", href: "#" },
+          ],
+        },
+        {
+          title: "Company",
+          links: [
+            { label: "About", href: "#" },
+            { label: "Contact", href: "#" },
+            { label: "GitHub", href: "#", external: true },
+          ],
+        },
+      ]}
+      socials={[
+        {
+          label: "GitHub",
+          href: "#",
+          icon: (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          ),
+        },
+        {
+          label: "Twitter",
+          href: "#",
+          icon: (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          ),
+        },
+      ]}
+      copyright="&copy; 2026 TheGridCN. All rights reserved."
+    />
+  );
+});
+
+export const InstallCommandPreview = React.memo(
+  function InstallCommandPreview() {
+    return (
+      <div className="space-y-4">
+        <InstallCommand packageName="@thegridcn/ui" />
+        <InstallCommand
+          packageName="@thegridcn/ui"
+          packageManager="pnpm"
+        />
+      </div>
+    );
+  }
+);
+
+export const SidebarNavPreview = React.memo(function SidebarNavPreview() {
+  const iconGrid = (
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <rect x="1" y="1" width="5" height="5" rx="1" stroke="currentColor" strokeWidth="1.2" />
+      <rect x="8" y="1" width="5" height="5" rx="1" stroke="currentColor" strokeWidth="1.2" />
+      <rect x="1" y="8" width="5" height="5" rx="1" stroke="currentColor" strokeWidth="1.2" />
+      <rect x="8" y="8" width="5" height="5" rx="1" stroke="currentColor" strokeWidth="1.2" />
+    </svg>
+  );
+
+  const iconStar = (
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <path d="M7 1l1.76 3.57L13 5.24l-3 2.92.71 4.13L7 10.27l-3.71 2.02.71-4.13-3-2.92 4.24-.67z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />
+    </svg>
+  );
+
+  return (
+    <SidebarNav
+      items={[
+        { label: "Dashboard", href: "#", icon: iconGrid, active: true },
+        { label: "Programs", href: "#", icon: iconStar },
+        {
+          label: "System",
+          icon: iconGrid,
+          children: [
+            { label: "Diagnostics", href: "#" },
+            { label: "Security", href: "#" },
+            { label: "Network", href: "#" },
+          ],
+        },
+        { label: "Settings", href: "#", icon: iconStar },
+      ]}
+    />
+  );
+});
+
+export const TronAccordionPreview = React.memo(
+  function TronAccordionPreview() {
+    return (
+      <TronAccordion
+        label="Grid Knowledge Base"
+        items={[
+          {
+            trigger: "What is the Grid?",
+            content:
+              "The Grid is a vast digital frontier created by Kevin Flynn. It is a virtual reality environment where programs live and interact, governed by its own set of rules and physics.",
+          },
+          {
+            trigger: "Who are the ISOs?",
+            content:
+              "Isomorphic Algorithms (ISOs) are programs that spontaneously evolved within the Grid. They were considered miraculous by Flynn due to their emergent complexity and potential to revolutionize science and philosophy.",
+          },
+          {
+            trigger: "What is a Light Cycle?",
+            content:
+              "Light Cycles are high-speed vehicles used in the Grid's arena games. They leave solid light trails behind them that act as walls, making them both transportation and weapons in competitive matches.",
+          },
+        ]}
+      />
+    );
+  }
+);
+
+export const TronCarouselPreview = React.memo(
+  function TronCarouselPreview() {
+    const slides = [
+      <div key="1" className="flex h-40 items-center justify-center rounded border border-primary/20 bg-primary/5">
+        <span className="font-mono text-sm uppercase tracking-widest text-primary/60">Sector 01</span>
+      </div>,
+      <div key="2" className="flex h-40 items-center justify-center rounded border border-cyan-500/20 bg-cyan-500/5">
+        <span className="font-mono text-sm uppercase tracking-widest text-cyan-500/60">Sector 02</span>
+      </div>,
+      <div key="3" className="flex h-40 items-center justify-center rounded border border-amber-500/20 bg-amber-500/5">
+        <span className="font-mono text-sm uppercase tracking-widest text-amber-500/60">Sector 03</span>
+      </div>,
+      <div key="4" className="flex h-40 items-center justify-center rounded border border-pink-500/20 bg-pink-500/5">
+        <span className="font-mono text-sm uppercase tracking-widest text-pink-500/60">Sector 04</span>
+      </div>,
+    ];
+
+    return <TronCarousel items={slides} loop showDots showArrows />;
+  }
+);
+
+export const TronDrawerPreview = React.memo(function TronDrawerPreview() {
+  return (
+    <TronDrawer>
+      <TronDrawerTrigger>Open System Drawer</TronDrawerTrigger>
+      <TronDrawerContent>
+        <TronDrawerHeader>
+          <TronDrawerTitle>System Configuration</TronDrawerTitle>
+          <TronDrawerDescription>
+            Adjust core Grid parameters and view system diagnostics.
+          </TronDrawerDescription>
+        </TronDrawerHeader>
+        <div className="px-5 py-4 space-y-3">
+          <div className="flex items-center justify-between">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-foreground/50">Grid Resolution</span>
+            <span className="font-mono text-xs text-foreground/80">4096 x 4096</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-foreground/50">Active Programs</span>
+            <span className="font-mono text-xs text-foreground/80">2,048</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-foreground/50">Uptime</span>
+            <span className="font-mono text-xs text-foreground/80">1,024 cycles</span>
+          </div>
+        </div>
+      </TronDrawerContent>
+    </TronDrawer>
+  );
+});
+
+export const TronCardPreview = React.memo(function TronCardPreview() {
+  return (
+    <div className="grid gap-4 sm:grid-cols-3">
+      <TronCard variant="default">
+        <TronCardHeader>
+          <TronCardTitle>Default</TronCardTitle>
+          <TronCardDescription>Standard card variant</TronCardDescription>
+        </TronCardHeader>
+        <TronCardContent>
+          <p className="text-xs text-foreground/60">Base card with subtle glow and blur backdrop.</p>
+        </TronCardContent>
+        <TronCardFooter>
+          <span className="font-mono text-[9px] uppercase tracking-widest text-foreground/30">Footer</span>
+        </TronCardFooter>
+      </TronCard>
+
+      <TronCard variant="elevated">
+        <TronCardHeader>
+          <TronCardTitle>Elevated</TronCardTitle>
+          <TronCardDescription>Enhanced prominence</TronCardDescription>
+        </TronCardHeader>
+        <TronCardContent>
+          <p className="text-xs text-foreground/60">Stronger glow and inner highlight for emphasis.</p>
+        </TronCardContent>
+        <TronCardFooter>
+          <span className="font-mono text-[9px] uppercase tracking-widest text-foreground/30">Footer</span>
+        </TronCardFooter>
+      </TronCard>
+
+      <TronCard variant="ghost">
+        <TronCardHeader>
+          <TronCardTitle>Ghost</TronCardTitle>
+          <TronCardDescription>Minimal styling</TronCardDescription>
+        </TronCardHeader>
+        <TronCardContent>
+          <p className="text-xs text-foreground/60">Transparent background with faint border.</p>
+        </TronCardContent>
+        <TronCardFooter>
+          <span className="font-mono text-[9px] uppercase tracking-widest text-foreground/30">Footer</span>
+        </TronCardFooter>
+      </TronCard>
+    </div>
+  );
+});
+
+export const TronPopoverPreview = React.memo(function TronPopoverPreview() {
+  return (
+    <div className="flex items-center justify-center py-8">
+      <TronPopover>
+        <TronPopoverTrigger>
+          <button className="rounded border border-primary/20 bg-card/60 px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-foreground/50 backdrop-blur-sm transition-all hover:border-primary/40 hover:text-primary">
+            View Program Info
+          </button>
+        </TronPopoverTrigger>
+        <TronPopoverContent align="center">
+          <div className="space-y-2">
+            <h4 className="font-mono text-xs uppercase tracking-widest text-primary">Program Details</h4>
+            <div className="space-y-1">
+              <div className="flex justify-between gap-6">
+                <span className="font-mono text-[9px] uppercase text-foreground/40">Name</span>
+                <span className="font-mono text-[10px] text-foreground/70">TRON-JA-307020</span>
+              </div>
+              <div className="flex justify-between gap-6">
+                <span className="font-mono text-[9px] uppercase text-foreground/40">Status</span>
+                <span className="font-mono text-[10px] text-green-400">Active</span>
+              </div>
+              <div className="flex justify-between gap-6">
+                <span className="font-mono text-[9px] uppercase text-foreground/40">Cycles</span>
+                <span className="font-mono text-[10px] text-foreground/70">12,847</span>
+              </div>
+            </div>
+          </div>
+        </TronPopoverContent>
+      </TronPopover>
+    </div>
+  );
+});
+
+export const ActivityFeedPreview = React.memo(
+  function ActivityFeedPreview() {
+    return (
+      <ActivityFeed
+        label="System Activity"
+        items={[
+          {
+            id: "1",
+            title: "Grid sector 7G initialized",
+            description: "New sector brought online with 512 active nodes.",
+            timestamp: "2 min ago",
+            type: "success",
+            user: "MCP",
+          },
+          {
+            id: "2",
+            title: "Anomaly detected in sector 4A",
+            description: "Irregular data pattern identified. Running diagnostics.",
+            timestamp: "8 min ago",
+            type: "warning",
+            user: "TRON",
+          },
+          {
+            id: "3",
+            title: "Program deresolution attempted",
+            description: "Unauthorized derez blocked by security protocol.",
+            timestamp: "15 min ago",
+            type: "error",
+            user: "CLU",
+          },
+          {
+            id: "4",
+            title: "ISO migration complete",
+            description: "42 ISOs successfully relocated to safe zone.",
+            timestamp: "1 hour ago",
+            type: "info",
+            user: "QUORRA",
+          },
+          {
+            id: "5",
+            title: "System backup initiated",
+            timestamp: "3 hours ago",
+            type: "default",
+            user: "FLYNN",
+          },
+        ]}
+      />
+    );
+  }
+);
+
+export const MetricRowPreview = React.memo(function MetricRowPreview() {
+  return (
+    <MetricRow
+      columns={4}
+      metrics={[
+        {
+          label: "Active Programs",
+          value: "2,048",
+          change: "+12.5%",
+          changeType: "up",
+        },
+        {
+          label: "Grid Sectors",
+          value: "128",
+          change: "+3",
+          changeType: "up",
+        },
+        {
+          label: "Anomalies",
+          value: "7",
+          change: "-23%",
+          changeType: "down",
+        },
+        {
+          label: "Uptime",
+          value: "99.8%",
+          change: "0.0%",
+          changeType: "neutral",
+        },
+      ]}
+    />
+  );
+});
+
+export const SearchInputPreview = React.memo(function SearchInputPreview() {
+  const [value, setValue] = React.useState("");
+  return (
+    <div className="max-w-sm space-y-3">
+      <SearchInput
+        value={value}
+        onChange={setValue}
+        placeholder="Search programs, sectors, users..."
+      />
+      <SearchInput placeholder="Disabled search" disabled />
+    </div>
+  );
+});
+
+export const TagInputPreview = React.memo(function TagInputPreview() {
+  const [tags, setTags] = React.useState(["grid", "tron", "iso", "program"]);
+  return (
+    <div className="max-w-md">
+      <TagInput
+        tags={tags}
+        onTagsChange={setTags}
+        placeholder="Add sector tag..."
+        maxTags={8}
+      />
+    </div>
+  );
+});
+
+export const NewsletterFormPreview = React.memo(
+  function NewsletterFormPreview() {
+    return (
+      <div className="max-w-lg">
+        <NewsletterForm
+          title="Grid Uplink"
+          description="Subscribe to receive system alerts, program updates, and Grid news directly to your terminal."
+        />
+      </div>
+    );
+  }
+);
+
+export const DatePickerPreview = React.memo(function DatePickerPreview() {
+  const [date, setDate] = React.useState<Date | undefined>(undefined);
+  return (
+    <div className="max-w-xs">
+      <DatePicker
+        date={date}
+        onDateChange={setDate}
+        label="Mission Date"
+        placeholder="Select cycle date"
+      />
+    </div>
+  );
+});
+
 export const tronMoviePreviews: Record<string, React.ComponentType> = {
   // Data Display
   "data-card": DataCardPreview,
@@ -1851,4 +2375,23 @@ export const tronMoviePreviews: Record<string, React.ComponentType> = {
   "chip": ChipPreview,
   // Game
   "light-cycle-game": LightCycleGamePreview,
+  // New Components
+  "copy-button": CopyButtonPreview,
+  "tron-code-block": TronCodeBlockPreview,
+  "status-dot": StatusDotPreview,
+  "hero-section": HeroSectionPreview,
+  "tron-footer": FooterPreview,
+  "install-command": InstallCommandPreview,
+  "sidebar-nav": SidebarNavPreview,
+  "tron-accordion": TronAccordionPreview,
+  "tron-carousel": TronCarouselPreview,
+  "tron-drawer": TronDrawerPreview,
+  "tron-card": TronCardPreview,
+  "tron-popover": TronPopoverPreview,
+  "activity-feed": ActivityFeedPreview,
+  "metric-row": MetricRowPreview,
+  "search-input": SearchInputPreview,
+  "tag-input": TagInputPreview,
+  "newsletter-form": NewsletterFormPreview,
+  "date-picker": DatePickerPreview,
 };

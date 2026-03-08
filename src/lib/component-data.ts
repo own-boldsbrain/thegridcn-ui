@@ -660,6 +660,138 @@ export const componentSections: Partial<
         type: "tron-movie",
         section: "tron-movie",
       },
+      // Code & Utilities
+      {
+        id: "copy-button",
+        name: "copy-button",
+        title: "Copy Button",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "tron-code-block",
+        name: "tron-code-block",
+        title: "Code Block",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "install-command",
+        name: "install-command",
+        title: "Install Command",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      // Status & Indicators
+      {
+        id: "status-dot",
+        name: "status-dot",
+        title: "Status Dot",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      // Layout & Page Sections
+      {
+        id: "hero-section",
+        name: "hero-section",
+        title: "Hero Section",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "tron-footer",
+        name: "tron-footer",
+        title: "Footer",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "sidebar-nav",
+        name: "sidebar-nav",
+        title: "Sidebar Nav",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      // Wrappers (Tron-styled shadcn/ui)
+      {
+        id: "tron-accordion",
+        name: "tron-accordion",
+        title: "Tron Accordion",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "tron-carousel",
+        name: "tron-carousel",
+        title: "Tron Carousel",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "tron-drawer",
+        name: "tron-drawer",
+        title: "Tron Drawer",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "tron-card",
+        name: "tron-card",
+        title: "Tron Card",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "tron-popover",
+        name: "tron-popover",
+        title: "Tron Popover",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      // Data Display (Extended)
+      {
+        id: "activity-feed",
+        name: "activity-feed",
+        title: "Activity Feed",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "metric-row",
+        name: "metric-row",
+        title: "Metric Row",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      // Form & Input (Extended)
+      {
+        id: "search-input",
+        name: "search-input",
+        title: "Search Input",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "tag-input",
+        name: "tag-input",
+        title: "Tag Input",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "newsletter-form",
+        name: "newsletter-form",
+        title: "Newsletter Form",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
+      {
+        id: "date-picker",
+        name: "date-picker",
+        title: "Date Picker",
+        type: "tron-movie",
+        section: "tron-movie",
+      },
       // Game
       {
         id: "light-cycle-game",
