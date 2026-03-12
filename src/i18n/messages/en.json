@@ -1,0 +1,204 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "view": "View",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "reset": "Reset",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "selectComponent": "Select component to install",
+    "componentsReady": "components ready",
+    "allNativeShadcn": "+ All native shadcn/ui",
+    "scrollToNavigate": "scroll to navigate",
+    "enterToSelect": "Enter to select",
+    "theme": "Theme",
+    "components": "Components",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "navigation": {
+    "home": "Home",
+    "components": "Components",
+    "documentation": "Documentation",
+    "about": "About",
+    "github": "GitHub",
+    "enterGrid": "Enter the Grid",
+    "viewOnGithub": "View on GitHub"
+  },
+  "hero": {
+    "classifiedProject": "Classified Project",
+    "title": "The Gridcn",
+    "subtitle": "Tron Theme System for shadcn/ui",
+    "description": "An authentic Tron: Ares inspired theme featuring Greek god color schemes, movie UI components, and immersive 3D effects.",
+    "targetAcquired": "Target Acquired",
+    "quickInstall": "Quick Install",
+    "componentsCount": "50+ Components",
+    "themesCount": "6 Themes",
+    "proximityScan": "Proximity Scan"
+  },
+  "features": {
+    "title": "Core Features",
+    "subtitle": "Everything you need to build immersive, futuristic interfaces",
+    "section": "Section",
+    "capabilities": "Capabilities",
+    "modules": "Modules",
+    "integrity": "Integrity",
+    "cards": {
+      "themeSystem": {
+        "title": "Theme System",
+        "description": "6 Greek god-inspired themes with customizable color schemes and glow effects powered by CSS variables."
+      },
+      "componentLibrary": {
+        "title": "Component Library",
+        "description": "50+ pre-styled components including 3D elements, HUD frames, timers, and data displays."
+      },
+      "threeJsIntegration": {
+        "title": "3D Integration",
+        "description": "Three.js powered 3D components like Grid3D, Tunnel, and GodAvatar with dynamic client-side loading."
+      },
+      "performance": {
+        "title": "Performance",
+        "description": "Optimized for production with dynamic imports, server-side rendering, and minimal bundle size."
+      },
+      "customization": {
+        "title": "Customization",
+        "description": "Full control over themes, components, and effects. Create your own themes using CSS variables."
+      },
+      "frameworkSupport": {
+        "title": "Framework Support",
+        "description": "Works with Next.js, Vite, Remix, and Astro. Any React framework that supports shadcn/ui."
+      }
+    }
+  },
+  "themes": {
+    "title": "Theme Selection",
+    "subtitle": "Choose your deity",
+    "section": "Section",
+    "frameworks": "Frameworks",
+    "build": "Build",
+    "selectTheme": "Select Theme",
+    "themes": {
+      "tron": {
+        "name": "Tron",
+        "god": "The Grid",
+        "color": "#00FFFF",
+        "description": "Classic cyan aesthetic inspired by the original Tron movie"
+      },
+      "ares": {
+        "name": "Ares",
+        "god": "God of War",
+        "color": "#FF3333",
+        "description": "Aggressive red theme embodying the spirit of battle"
+      },
+      "clu": {
+        "name": "Clu",
+        "god": "The Program",
+        "color": "#FF9500",
+        "description": "Orange perfection representing digital order"
+      },
+      "athena": {
+        "name": "Athena",
+        "god": "Goddess of Wisdom",
+        "color": "#FFD700",
+        "description": "Golden wisdom with strategic elegance"
+      },
+      "aphrodite": {
+        "name": "Aphrodite",
+        "god": "Goddess of Love",
+        "color": "#FF69B4",
+        "description": "Pink beauty with graceful charm"
+      },
+      "poseidon": {
+        "name": "Poseidon",
+        "god": "God of the Sea",
+        "color": "#0066FF",
+        "description": "Deep blue power of the ocean depths"
+      }
+    }
+  },
+  "install": {
+    "title": "Install Components",
+    "command": "Install using your package manager",
+    "selectPackageManager": "Select package manager",
+    "selectComponent": "Select component to install",
+    "componentSelected": "Component selected",
+    "copyCommand": "Copy command",
+    "commandCopied": "Command copied!",
+    "categories": {
+      "3d": "3D Components",
+      "data": "Data Display",
+      "timers": "Timers",
+      "hud": "HUD Elements",
+      "feedback": "Feedback & Alerts",
+      "navigation": "Navigation & Location",
+      "effects": "Effects"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Get answers to common questions",
+    "section": "Section",
+    "queries": "Queries",
+    "status": "Status",
+    "declassified": "Declassified",
+    "questions": {
+      "whatIsGridcn": {
+        "question": "What is The Gridcn?",
+        "answer": "The Gridcn is a Tron-inspired theme and component library built on top of shadcn/ui. It provides 50+ pre-styled components, 6 Greek god color themes, 3D effects powered by Three.js, and HUD-style UI elements — all designed to create immersive, futuristic interfaces with minimal setup."
+      },
+      "howToInstall": {
+        "question": "How do I install The Gridcn components?",
+        "answer": "You can install components using the shadcn CLI. Run 'pnpm dlx shadcn@latest add @thegridcn/[component]' to add individual components, or use 'pnpm dlx shadcn@latest list @thegridcn' to browse all available components. Works with npm, yarn, and bun too."
+      },
+      "needShadcn": {
+        "question": "Do I need shadcn/ui already set up?",
+        "answer": "Yes. The Gridcn extends shadcn/ui, so you need a project with shadcn/ui initialized. Run 'pnpm dlx shadcn@latest init' first if you don't have it. The Gridcn components integrate seamlessly with your existing shadcn/ui setup and Tailwind CSS configuration."
+      },
+      "availableThemes": {
+        "question": "What themes are available?",
+        "answer": "Six Greek god-inspired themes: Ares (red), Tron (cyan), Clu (orange), Athena (gold), Aphrodite (pink), and Poseidon (blue). Each theme uses oklch() color space for precise color control and includes matching glow effects, borders, and background tones."
+      },
+      "customization": {
+        "question": "Can I customize the themes or create my own?",
+        "answer": "Absolutely. Themes are defined as CSS variables using the oklch() color space, applied via a data-theme attribute. You can override any variable in your own CSS or create entirely new themes by defining a new set of color tokens following the same pattern."
+      },
+      "performance": {
+        "question": "Do the 3D components affect performance?",
+        "answer": "The 3D components (Grid3D, Tunnel, GodAvatar) use Three.js and are dynamically imported with ssr: false so they don't impact server-side rendering or initial bundle size. They only load on the client when needed. You can also use the intensity system to control the level of visual effects."
+      },
+      "frameworkSupport": {
+        "question": "Does it work with frameworks other than Next.js?",
+        "answer": "The Gridcn components work with any React framework that supports shadcn/ui — including Next.js, Vite, Remix, and Astro. Since they're installed directly into your project as source code (not a dependency), you have full control and can adapt them to your stack."
+      },
+      "isFree": {
+        "question": "Is The Gridcn free to use?",
+        "answer": "Yes, The Gridcn is completely free and open source. You can use it in personal and commercial projects. Components are added to your codebase as source files, giving you full ownership and the freedom to modify anything."
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "builtWith": "Built with",
+    "and": "and",
+    "madeBy": "Made by"
+  },
+  "locale": {
+    "switch": "Switch Language",
+    "en": "English",
+    "pt": "Português"
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "close": "Fechar",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "view": "Visualizar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "reset": "Redefinir",
+    "copy": "Copiar",
+    "copied": "Copiado!",
+    "selectComponent": "Selecione o componente para instalar",
+    "componentsReady": "componentes prontos",
+    "allNativeShadcn": "+ Todos nativos shadcn/ui",
+    "scrollToNavigate": "role para navegar",
+    "enterToSelect": "Enter para selecionar",
+    "theme": "Tema",
+    "components": "Componentes",
+    "status": "Status",
+    "active": "Ativo",
+    "inactive": "Inativo"
+  },
+  "navigation": {
+    "home": "Início",
+    "components": "Componentes",
+    "documentation": "Documentação",
+    "about": "Sobre",
+    "github": "GitHub",
+    "enterGrid": "Entrar na Grid",
+    "viewOnGithub": "Ver no GitHub"
+  },
+  "hero": {
+    "classifiedProject": "Projeto Classificado",
+    "title": "The Gridcn",
+    "subtitle": "Sistema de Temas Tron para shadcn/ui",
+    "description": "Um tema autêntico inspirado em Tron: Ares com esquemas de cores dos deuses gregos, componentes de UI cinematográficos e efeitos 3D imersivos.",
+    "targetAcquired": "Alvo Adquirido",
+    "quickInstall": "Instalação Rápida",
+    "componentsCount": "50+ Componentes",
+    "themesCount": "6 Temas",
+    "proximityScan": "Escaneamento de Proximidade"
+  },
+  "features": {
+    "title": "Recursos Principais",
+    "subtitle": "Tudo que você precisa para criar interfaces futuristas imersivas",
+    "section": "Seção",
+    "capabilities": "Capacidades",
+    "modules": "Módulos",
+    "integrity": "Integridade",
+    "cards": {
+      "themeSystem": {
+        "title": "Sistema de Temas",
+        "description": "6 temas inspirados nos deuses gregos com esquemas de cores personalizáveis e efeitos de brilho alimentados por variáveis CSS."
+      },
+      "componentLibrary": {
+        "title": "Biblioteca de Componentes",
+        "description": "50+ componentes pré-estilizados incluindo elementos 3D, molduras HUD, temporizadores e exibições de dados."
+      },
+      "threeJsIntegration": {
+        "title": "Integração 3D",
+        "description": "Componentes 3D alimentados por Three.js como Grid3D, Tunnel e GodAvatar com carregamento dinâmico no lado do cliente."
+      },
+      "performance": {
+        "title": "Desempenho",
+        "description": "Otimizado para produção com importações dinâmicas, renderização no servidor e tamanho mínimo do bundle."
+      },
+      "customization": {
+        "title": "Personalização",
+        "description": "Controle total sobre temas, componentes e efeitos. Crie seus próprios temas usando variáveis CSS."
+      },
+      "frameworkSupport": {
+        "title": "Suporte a Frameworks",
+        "description": "Funciona com Next.js, Vite, Remix e Astro. Qualquer framework React que suporte shadcn/ui."
+      }
+    }
+  },
+  "themes": {
+    "title": "Seleção de Tema",
+    "subtitle": "Escolha sua divindade",
+    "section": "Seção",
+    "frameworks": "Frameworks",
+    "build": "Build",
+    "selectTheme": "Selecionar Tema",
+    "themes": {
+      "tron": {
+        "name": "Tron",
+        "god": "A Grid",
+        "color": "#00FFFF",
+        "description": "Estética ciano clássica inspirada no filme Tron original"
+      },
+      "ares": {
+        "name": "Ares",
+        "god": "Deus da Guerra",
+        "color": "#FF3333",
+        "description": "Tema vermelho agressivo incorporando o espírito de batalha"
+      },
+      "clu": {
+        "name": "Clu",
+        "god": "O Programa",
+        "color": "#FF9500",
+        "description": "Perfeição laranja representando ordem digital"
+      },
+      "athena": {
+        "name": "Athena",
+        "god": "Deusa da Sabedoria",
+        "color": "#FFD700",
+        "description": "Sabedoria dourada com elegância estratégica"
+      },
+      "aphrodite": {
+        "name": "Aphrodite",
+        "god": "Deusa do Amor",
+        "color": "#FF69B4",
+        "description": "Beleza rosa com charme gracioso"
+      },
+      "poseidon": {
+        "name": "Poseidon",
+        "god": "Deus do Mar",
+        "color": "#0066FF",
+        "description": "Poder azul profundo das profundezas oceânicas"
+      }
+    }
+  },
+  "install": {
+    "title": "Instalar Componentes",
+    "command": "Instale usando seu gerenciador de pacotes",
+    "selectPackageManager": "Selecione o gerenciador de pacotes",
+    "selectComponent": "Selecione o componente para instalar",
+    "componentSelected": "Componente selecionado",
+    "copyCommand": "Copiar comando",
+    "commandCopied": "Comando copiado!",
+    "categories": {
+      "3d": "Componentes 3D",
+      "data": "Exibição de Dados",
+      "timers": "Temporizadores",
+      "hud": "Elementos HUD",
+      "feedback": "Feedback & Alertas",
+      "navigation": "Navegação & Localização",
+      "effects": "Efeitos"
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Obtenha respostas para perguntas comuns",
+    "section": "Seção",
+    "queries": "Consultas",
+    "status": "Status",
+    "declassified": "Desclassificado",
+    "questions": {
+      "whatIsGridcn": {
+        "question": "O que é The Gridcn?",
+        "answer": "The Gridcn é uma biblioteca de temas e componentes inspirada em Tron, construída sobre shadcn/ui. Fornece 50+ componentes pré-estilizados, 6 temas de cores dos deuses gregos, efeitos 3D alimentados por Three.js e elementos de UI estilo HUD — tudo projetado para criar interfaces futuristas imersivas com configuração mínima."
+      },
+      "howToInstall": {
+        "question": "Como instalo os componentes The Gridcn?",
+        "answer": "Você pode instalar componentes usando a CLI shadcn. Execute 'pnpm dlx shadcn@latest add @thegridcn/[componente]' para adicionar componentes individuais, ou use 'pnpm dlx shadcn@latest list @thegridcn' para navegar todos os componentes disponíveis. Funciona com npm, yarn e bun também."
+      },
+      "needShadcn": {
+        "question": "Preciso ter shadcn/ui já configurado?",
+        "answer": "Sim. The Gridcn estende shadcn/ui, então você precisa de um projeto com shadcn/ui inicializado. Execute 'pnpm dlx shadcn@latest init' primeiro se não tiver. Os componentes The Gridcn integram perfeitamente com sua configuração existente shadcn/ui e Tailwind CSS."
+      },
+      "availableThemes": {
+        "question": "Quais temas estão disponíveis?",
+        "answer": "Seis temas inspirados nos deuses gregos: Ares (vermelho), Tron (ciano), Clu (laranja), Athena (dourado), Aphrodite (rosa) e Poseidon (azul). Cada tema usa espaço de cor oklch() para controle preciso de cores e inclui efeitos de brilho correspondentes, bordas e tons de fundo."
+      },
+      "customization": {
+        "question": "Posso personalizar os temas ou criar os meus?",
+        "answer": "Absolutamente. Temas são definidos como variáveis CSS usando espaço de cor oklch(), aplicados via atributo data-theme. Você pode sobrescrever qualquer variável no seu próprio CSS ou criar temas inteiramente novos definindo um novo conjunto de tokens de cores seguindo o mesmo padrão."
+      },
+      "performance": {
+        "question": "Os componentes 3D afetam o desempenho?",
+        "answer": "Os componentes 3D (Grid3D, Tunnel, GodAvatar) usam Three.js e são importados dinamicamente com ssr: false para não impactar renderização no servidor ou tamanho inicial do bundle. Eles só carregam no cliente quando necessário. Você também pode usar o sistema de intensidade para controlar o nível de efeitos visuais."
+      },
+      "frameworkSupport": {
+        "question": "Funciona com frameworks além do Next.js?",
+        "answer": "Os componentes The Gridcn funcionam com qualquer framework React que suporte shadcn/ui — incluindo Next.js, Vite, Remix e Astro. Como são instalados diretamente no seu projeto como código fonte (não uma dependência), você tem controle total e pode adaptá-los ao seu stack."
+      },
+      "isFree": {
+        "question": "The Gridcn é gratuito para usar?",
+        "answer": "Sim, The Gridcn é completamente gratuito e open source. Você pode usá-lo em projetos pessoais e comerciais. Componentes são adicionados ao seu código como arquivos fonte, dando a você propriedade total e liberdade para modificar qualquer coisa."
+      }
+    }
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados",
+    "builtWith": "Construído com",
+    "and": "e",
+    "madeBy": "Feito por"
+  },
+  "locale": {
+    "switch": "Mudar Idioma",
+    "en": "English",
+    "pt": "Português"
+  }
+}
