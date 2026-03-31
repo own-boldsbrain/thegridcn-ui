@@ -12,6 +12,9 @@
     "registry:update": "tsx scripts/update-registry.ts",
     "registry:build": "shadcn build && tsx scripts/enhance-registry-files.ts && tsx scripts/build-registry-styles.ts"
   },
+  "exports": {
+    "./*": "./src/*"
+  },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",
