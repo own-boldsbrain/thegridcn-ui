@@ -16,7 +16,7 @@ export default async function ComponentsLayout({
 }) {
   const { locale } = await params;
   
-  if (!routing.locales.includes(locale as 'en' | 'pt')) {
+  if (!routing.locales.includes(locale as 'en' | 'pt-BR')) {
     notFound();
   }
 

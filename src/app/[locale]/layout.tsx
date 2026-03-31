@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import { Geist_Mono, Orbitron, Rajdhani } from "next/font/google"
 import { ThemeProvider } from "@/components/theme"
 import { Toaster } from "@/components/ui/sonner"
+import { LocaleSwitcher } from '@/components/i18n';
 import "../globals.css"
 import "@/styles/tron-style.css"
 import { Analytics } from '@vercel/analytics/next';
@@ -100,7 +101,7 @@ export default async function LocaleLayout({
   const { locale } = await params;
   
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as 'en' | 'pt')) {
+  if (!routing.locales.includes(locale as 'en' | 'pt-BR')) {
     notFound();
   }
 
@@ -200,6 +201,9 @@ export default async function LocaleLayout({
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
+            <div className="fixed top-4 right-4 z-50">
+              <LocaleSwitcher />
+            </div>
             {children}
             <Toaster
               position="bottom-right"

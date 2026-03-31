@@ -48,7 +48,8 @@
     "quickInstall": "Quick Install",
     "componentsCount": "50+ Components",
     "themesCount": "6 Themes",
-    "proximityScan": "Proximity Scan"
+    "proximityScan": "Proximity Scan",
+    "declassified": "Declassified"
   },
   "features": {
     "title": "Core Features",
@@ -199,6 +200,6 @@
   "locale": {
     "switch": "Switch Language",
     "en": "English",
-    "pt": "Português"
+    "pt-BR": "Português"
   }
 }

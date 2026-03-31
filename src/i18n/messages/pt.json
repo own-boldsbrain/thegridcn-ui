@@ -48,7 +48,8 @@
     "quickInstall": "Instalação Rápida",
     "componentsCount": "50+ Componentes",
     "themesCount": "6 Temas",
-    "proximityScan": "Escaneamento de Proximidade"
+    "proximityScan": "Escaneamento de Proximidade",
+    "declassified": "Desclassificado"
   },
   "features": {
     "title": "Recursos Principais",
@@ -199,6 +200,6 @@
   "locale": {
     "switch": "Mudar Idioma",
     "en": "English",
-    "pt": "Português"
+    "pt-BR": "Português"
   }
 }

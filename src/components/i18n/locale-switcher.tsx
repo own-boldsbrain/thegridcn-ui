@@ -36,16 +36,16 @@ export function LocaleSwitcher() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem
+          onClick={() => switchLocale('pt-BR')}
+          className={locale === 'pt-BR' ? 'bg-primary/10' : ''}
+        >
+          {t('pt-BR')}
+        </DropdownMenuItem>
+        <DropdownMenuItem
           onClick={() => switchLocale('en')}
           className={locale === 'en' ? 'bg-primary/10' : ''}
         >
           {t('en')}
-        </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => switchLocale('pt')}
-          className={locale === 'pt' ? 'bg-primary/10' : ''}
-        >
-          {t('pt')}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

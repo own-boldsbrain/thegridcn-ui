@@ -3,8 +3,7 @@
 import * as React from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from 'next-intl';
-import Link from "@/lib/i18n/navigation";
-import { useRouter } from "@/lib/i18n/navigation";
+import { Link, useRouter } from "@/lib/i18n/navigation";
 import { themes, useTheme } from "@/components/theme";
 import {
   Reticle,
